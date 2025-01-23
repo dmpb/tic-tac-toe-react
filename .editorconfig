@@ -1,0 +1,32 @@
+# EditorConfig helps maintain consistent coding styles for multiple developers
+# working on the same project across various editors and IDEs.
+
+# Root of the project
+root = true
+
+# Global settings (applied to all files unless overridden)
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# Match TypeScript and JavaScript files
+[*.{ts,tsx,js,jsx}]
+indent_size = 2
+
+# Match JSON files
+[*.json]
+indent_style = space
+indent_size = 2
+
+# Match Markdown files
+[*.md]
+trim_trailing_whitespace = false
+
+# Match YAML files
+[*.yml]
+indent_style = space
+indent_size = 2
