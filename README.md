@@ -1,50 +1,46 @@
-# React + TypeScript + Vite
+# Tic Tac Toe - React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-19.2-61DAFB?logo=react&logoColor=white) ![Vite](https://img.shields.io/badge/Vite-8.0-646CFF?logo=vite&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?logo=typescript&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.2-38BDF8?logo=tailwindcss&logoColor=white)
 
-Currently, two official plugins are available:
+Proyecto de estudio basado en el tutorial clásico de React para construir un juego de Tic Tac Toe, usando Vite, TypeScript y Tailwind CSS.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Vista general 🎯
 
-## Expanding the ESLint configuration
+- Juego 3x3 con turnos alternos.
+- Detección de ganador y empate.
+- UI moderna con Tailwind y componentes reutilizables.
+- Configuración actualizada para Vite 8, React 19 y TypeScript 5.9.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Requisitos ✅
 
-- Configure the top-level `parserOptions` property like this:
+- Node.js 18+ (recomendado)
+- npm 9+
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Instalación 📦
+
+```bash
+npm install
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Scripts 🧰
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- `npm run dev`: servidor de desarrollo con HMR.
+- `npm run build`: build de producción.
+- `npm run preview`: previsualizar el build.
+- `npm run lint`: ejecutar ESLint.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Estructura 🗂️
+
+- `src/App.tsx`: lógica principal del juego y layout.
+- `src/components/Square.tsx`: componente de casilla.
+- `src/App.css`: entrada de estilos (Tailwind).
+- `vite.config.ts`: configuración de Vite.
+
+## Notas 📝
+
+- Este proyecto sigue el tutorial oficial de React, con mejoras visuales y de configuración.
+- Si necesitas volver al estilo “tutorial puro”, se puede simplificar el diseño sin tocar la lógica.
+
+## Licencia 📜
+
+Uso educativo.
