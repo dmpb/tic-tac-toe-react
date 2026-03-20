@@ -1,8 +1,12 @@
 # Tic Tac Toe - React
 
+![Portada](https://raw.githubusercontent.com/dmpb/tic-tac-toe-react/public/screenshot-game.png)
+
 ![React](https://img.shields.io/badge/React-19.2-61DAFB?logo=react&logoColor=white) ![Vite](https://img.shields.io/badge/Vite-8.0-646CFF?logo=vite&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?logo=typescript&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.2-38BDF8?logo=tailwindcss&logoColor=white)
 
 Proyecto de estudio basado en el tutorial clásico de React para construir un juego de Tic Tac Toe, usando Vite, TypeScript y Tailwind CSS.
+
+Demo: [Ver en vivo](https://tic-tac-toe-react-encomnvw9-dmpbs-projects.vercel.app/)
 
 ## Vista general 🎯
 
